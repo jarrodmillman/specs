@@ -8,6 +8,7 @@ author:
   - "Stéfan van der Walt <stefanv@berkeley.edu>"
 discussion: https://discuss.scientific-python.org/t/spec-2-api-dispatch/173
 endorsed-by:
+withdrawn: true
 ---
 
 ## Description
