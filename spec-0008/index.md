@@ -81,7 +81,7 @@ permissions: {}
 ```
 
 Each job should then grant only the permissions it requires.
-For example, a build job that checks out the repository may need `contents: read`, while the PyPI publishing job needs `id-token: write` for trusted publishing.
+For example, a build job that checks out a private repository may need `contents: read`, while the PyPI publishing job needs `id-token: write` for trusted publishing.
 
 #### Restrict permitted actions in workflows
 
@@ -116,6 +116,7 @@ Additional reviewer requirements can be configured per GitHub Actions environmen
 GitHub Actions must be pinned using the full commit SHA corresponding to the release version being used.
 Using versions, branches, tags, or abbreviated hashes is susceptible to attacks.
 Include the corresponding release version in a comment, and update pinned actions regularly through a reviewed process so that related actions remain compatible.
+Use a tool, like zizmor, to ensure that hashes are actually from the repository and not from a fork.
 
 ```yaml
 - uses: actions/some-action@1fe14e04876783b259436247a3898d2fe7d5548f # vX.Y.Z
