@@ -8,6 +8,7 @@ author:
   - "Juanita Gomez <juanitagomezr2112@gmail.com>"
   - "Seth Larson <sethmichaellarson@gmail.com>"
   - "Lars Grüter <lagru@mailbox.org>"
+  - "Henry Schreiner <HenrySchreinerIII@gmail.com>"
   - "Jarrod Millman <millman@berkeley.edu>"
 endorsed-by:
   - networkx
