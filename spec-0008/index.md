@@ -212,11 +212,6 @@ jobs:
 
       - name: Upload distributions
         uses: actions/upload-artifact@<full action commit SHA> # vX.Y.Z
-        with:
-          name: python-package-distributions
-          path: dist/
-          if-no-files-found: error
-          retention-days: 1
 
   publish:
     name: Publish Python distributions to PyPI
